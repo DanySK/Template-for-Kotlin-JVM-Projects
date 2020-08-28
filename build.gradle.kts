@@ -18,6 +18,15 @@ gitSemVer {
 
 repositories {
     mavenCentral()
+    jcenter {
+        content {
+            includeGroup("io.gitlab.arturbosch.detekt")
+            includeGroupByRegex("""org\.jetbrains\.(dokka|kotlinx)""")
+            includeGroup("org.jetbrains")
+            // TODO: Remove when https://github.com/korlibs/korte/issues/13 is resolved
+            includeGroup("com.soywiz.korlibs.korte")
+        }
+    }
     mapOf(
         "kotlin/dokka" to setOf("org.jetbrains.dokka"),
         "kotlin/kotlinx.html" to setOf("org.jetbrains.kotlinx"),
@@ -76,13 +85,9 @@ detekt {
     }
 }
 
-tasks.withType<org.jetbrains.dokka.gradle.DokkaTask> {
-    // Workaround for https://github.com/Kotlin/dokka/issues/294
-    outputFormat = if (JavaVersion.current().isJava10Compatible) "html" else "javadoc"
-    outputDirectory = "$buildDir/javadoc"
-    tasks.withType<org.danilopianini.gradle.mavencentral.JavadocJar> {
-        from(outputDirectory)
-    }
+tasks.withType<org.danilopianini.gradle.mavencentral.JavadocJar> {
+    dependsOn(tasks.dokkaJavadoc)
+    from(tasks.dokkaJavadoc.get().outputDirectory)
 }
 
 signing {
