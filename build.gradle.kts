@@ -92,8 +92,8 @@ signing {
 }
 
 publishOnCentral {
-    projectLongName.set("Template Kotlin JVM Project")
-    projectDescription.set("A template repository for Kotlin JVM projects")
+    projectLongName = "Template Kotlin JVM Project"
+    projectDescription = "A template repository for Kotlin JVM projects"
 }
 
 publishing {
