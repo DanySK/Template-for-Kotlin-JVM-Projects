@@ -12,10 +12,6 @@ plugins {
 
 group = "org.danilopianini"
 
-gitSemVer {
-    version = computeGitSemVer()
-}
-
 repositories {
     mavenCentral()
     jcenter {
