@@ -1,19 +1,6 @@
-name: CI
+name: CI/CD Process
 on:
-  push:
-    tags: '*'
-    branches-ignore:
-      - 'autodelivery**'
-      - 'bump-**'
-      - 'renovate/**'
-      - 'dependabot/**'
-    paths-ignore:
-      - 'CHANGELOG.md'
-      - 'LICENSE'
-      - 'README.md'
-      - 'renovate.json'
-      - '.gitignore'
-  pull_request:
+  workflow_call:
   workflow_dispatch:
 
 jobs:
@@ -31,13 +18,13 @@ jobs:
       - uses: DanySK/build-check-deploy-gradle-action@2.0.3
         with:
           # Dry-deployment
-          deploy-command: ./gradlew closeKotlinMavenOnMavenCentralNexus --parallel
+          deploy-command: >-
+            ./gradlew uploadKotlin close --parallel
           should-run-codecov: ${{ runner.os == 'Linux' }}
           should-deploy: >-
             ${{
               runner.os == 'Linux'
-              && contains(github.repository, 'DanySK/Template-for-Kotlin-JVM-Projects')
-              && contains('push workflow_dispatch', github.event_name)
+              && (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository)
             }}
           maven-central-password: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
           signing-key: ${{ secrets.SIGNING_KEY }}
@@ -49,9 +36,7 @@ jobs:
     needs:
       - build
     runs-on: ubuntu-latest
-    if: >-
-      contains(github.repository, 'DanySK/Template-for-Kotlin-JVM-Projects')
-      && contains('push workflow_dispatch', github.event_name)
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
     steps:
       - name: Checkout
         uses: actions/checkout@v3.0.2
@@ -70,7 +55,7 @@ jobs:
           maven-central-password: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
           signing-key: ${{ secrets.SIGNING_KEY }}
           signing-password: ${{ secrets.SIGNING_PASSWORD }}
-  ci-success:
+  success:
     runs-on: ubuntu-latest
     needs:
       - release
