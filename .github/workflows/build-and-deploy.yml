@@ -7,7 +7,7 @@ jobs:
   build:
     strategy:
       matrix:
-        os: [ windows-2022, macos-11, ubuntu-20.04 ]
+        os: [ windows-2022, macos-12, ubuntu-20.04 ]
     runs-on: ${{ matrix.os }}
     concurrency:
       group: build-${{ github.workflow }}-${{ matrix.os }}-${{ github.event.number || github.ref }}
