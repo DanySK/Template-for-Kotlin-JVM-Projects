@@ -20,7 +20,7 @@ jobs:
         with:
           # Dry-deployment
           deploy-command: >-
-            ./gradlew uploadKotlin close --parallel
+            ./gradlew uploadKotlin close drop --parallel
           should-run-codecov: ${{ runner.os == 'Linux' }}
           should-deploy: >-
             ${{
