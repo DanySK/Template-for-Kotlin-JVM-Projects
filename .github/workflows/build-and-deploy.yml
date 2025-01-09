@@ -20,7 +20,7 @@ jobs:
         with:
           # Dry-deployment
           deploy-command: >-
-            ./gradlew uploadKotlin close dropStagingRepositoryOnMavenCentral --parallel
+            ./gradlew uploadAll closeStaging dropStagingRepositoryOnMavenCentral --parallel
           should-run-codecov: ${{ runner.os == 'Linux' }}
           should-deploy: >-
             ${{
@@ -36,7 +36,7 @@ jobs:
           signing-key: ${{ secrets.SIGNING_KEY }}
           signing-password: ${{ secrets.SIGNING_PASSWORD }}
   release:
-    permissions: 
+    permissions:
       contents: write
       packages: write
     concurrency:

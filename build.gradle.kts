@@ -48,6 +48,7 @@ signing {
 }
 
 publishOnCentral {
+    repoOwner = "DanySK"
     projectLongName.set("Template Kotlin JVM Project")
     projectDescription.set("A template repository for Kotlin JVM projects")
     repository("https://maven.pkg.github.com/danysk/${rootProject.name}".lowercase()) {
