@@ -1,7 +1,7 @@
 [versions]
 kotest = "5.9.1"
 kotlin = "2.2.10"
-mockito = "5.18.0"
+mockito = "5.19.0"
 
 [libraries]
 kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
