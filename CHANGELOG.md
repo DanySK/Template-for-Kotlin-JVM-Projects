@@ -1,3 +1,34 @@
+## [0.1.38](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/compare/0.1.37...0.1.38) (2026-03-19)
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v2.3.20 ([#1269](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1269)) ([8d98025](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/8d98025d274ef09c81c3a0a307dfab0df7d9905c))
+* **deps:** update dependency org.mockito:mockito-core to v5.22.0 ([#1258](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1258)) ([393dd3a](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/393dd3ab4c853df5a9258be01ffd8853d8ed6f1d))
+* **deps:** update dependency org.mockito:mockito-core to v5.23.0 ([#1267](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1267)) ([c7e5325](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/c7e5325853d68890d92c8b0a8291223b739a1500))
+* **deps:** update kotest to v6.1.3 ([#1248](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1248)) ([2c2e06d](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/2c2e06d10775d63d48ba8f206c10db8409fd13ec))
+* **deps:** update kotest to v6.1.4 ([#1256](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1256)) ([562cd8d](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/562cd8d60731f84fd10466452249166c50287a03))
+* **deps:** update kotest to v6.1.5 ([#1265](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1265)) ([bd4fa30](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/bd4fa304ac791895ce7736281da53967b1bfc1d4))
+* **deps:** update kotest to v6.1.6 ([#1266](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1266)) ([d7cd802](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/d7cd80239ef8f2742ac5f3e6b0dea1e6726b5efb))
+* **deps:** update kotest to v6.1.7 ([#1268](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1268)) ([7b55b96](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/7b55b9633eea025a23b1f91e77efe504ae4cc27a))
+* **deps:** update node.js to 24.14 ([#1257](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1257)) ([6f6a5a6](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/6f6a5a63f16ab9329ea9ccadc6493e61d088f64f))
+* **deps:** update plugin gitsemver to v7.0.12 ([#1252](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1252)) ([b07501b](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/b07501b5f744eeebad66b1987e7e50dc69ed7bb3))
+* **deps:** update plugin gitsemver to v7.0.13 ([#1262](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1262)) ([ab6781d](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/ab6781d2c741525ce71ded01a8e8dc356458f715))
+* **deps:** update plugin kotlin-qa to v0.101.1 ([#1250](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1250)) ([6035646](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/603564612b49e09de6edc0c6feeb2b9e934ff12a))
+* **deps:** update plugin kotlin-qa to v1 ([#1251](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1251)) ([be98700](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/be98700f91744c8e352826da45b0f3f80b67acc5))
+* **deps:** update plugin kotlin-qa to v1.0.1 ([#1254](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1254)) ([fc8b294](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/fc8b294549a2ab3eec92bb457a1740889c4d3a18))
+* **deps:** update plugin kotlin-qa to v1.1.0 ([#1260](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1260)) ([67ecfd1](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/67ecfd152a2debfc6d53daeffb4e0884ee5b2ead))
+* **deps:** update plugin kotlin-qa to v1.2.0 ([#1264](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1264)) ([2787cc5](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/2787cc55dc1a22abd8b6fc4d34493ffe944b45df))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.10 ([#1263](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1263)) ([2167f8c](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/2167f8c86734e24be4c33c8afc5db6292b4444ce))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.11 ([#1270](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1270)) ([c94aeea](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/c94aeea720d6a2cb43b4597ad8034873f1812596))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.9 ([#1249](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1249)) ([0948a57](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/0948a57845835311b7bc41e9fdc9a2495e7ae3cd))
+* **deps:** update plugin publishoncentral to v9.1.13 ([#1253](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1253)) ([cdeb58a](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/cdeb58ad0e8f73bf54011a65763d95c3cd72de5d))
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v6.3.0 ([#1259](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1259)) ([3d62402](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/3d62402046ae0551d9d9bfe37f3d3e48fefc98b3))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.24 ([#1255](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1255)) ([6591abc](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/6591abc96910b799d1ba9254663f80b22d96de49))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.25 ([#1271](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1271)) ([eafac9d](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/eafac9d6e0dac7c25eab69cf2bebcbc0ce99dee0))
+
 ## [0.1.37](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/compare/0.1.36...0.1.37) (2026-02-06)
 
 ### Dependency updates
