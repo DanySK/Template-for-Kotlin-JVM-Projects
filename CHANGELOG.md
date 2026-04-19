@@ -1,3 +1,13 @@
+## [0.1.40](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/compare/0.1.39...0.1.40) (2026-04-19)
+
+### Dependency updates
+
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.13 ([#1293](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1293)) ([59e2a22](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/59e2a22fe15bde0bc612c7189b34613ce49b6dbc))
+
+### Documentation
+
+* **deps:** update plugin dokka to v2.2.0 ([#1281](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/issues/1281)) ([e17491e](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/e17491e5fa400ab8101db9b4375086525a571d51))
+
 ## [0.1.39](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/compare/0.1.38...0.1.39) (2026-04-19)
 
 ### Dependency updates
