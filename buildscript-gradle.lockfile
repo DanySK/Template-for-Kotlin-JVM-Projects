@@ -1,8 +1,8 @@
 # This is a Gradle generated file for dependency locking.
 # Manual edits can break the build and are not advised.
 # This file is expected to be part of source control.
-com.dorongold.plugins:task-tree:4.0.1=classpath
-com.dorongold.task-tree:com.dorongold.task-tree.gradle.plugin:4.0.1=classpath
+com.dorongold.plugins:task-tree:4.0.2=classpath
+com.dorongold.task-tree:com.dorongold.task-tree.gradle.plugin:4.0.2=classpath
 com.fasterxml.jackson.core:jackson-annotations:2.15.3=classpath
 com.fasterxml.jackson.core:jackson-core:2.15.3=classpath
 com.fasterxml.jackson.core:jackson-databind:2.15.3=classpath
